@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <!-- Custom -->
+    <link rel="stylesheet" href="./css/custom-styles.css">
+    <link rel="stylesheet" href="./css/custom-styles-dark.css">
+    <link rel="icon" href="./logo.png">
+    <script src="./js/main.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<body onload="load()">
+    <section class="custom-container text-center">
+        <article class="list my-5">
+            <div class="d-flex flex-row head">
+                <div class="col-1 pt-3 pb-2 ps-4 theme text-end">
+                    <a href="https://github.com/joanprat/joanprat.github.io/tree/main/projects/project2"><i class="bi bi-github"></i></a>
+                </div>
+                <div class="col-10 py-2 text-center">
+                    <h1 class="m-0 ps-3">TO DO LIST</h1>    
+                </div>
+                <div class="col-1 pt-3 pb-2 pe-4 theme text-end">
+                    <i id="theme" class="bi-moon-stars-fill" onclick="toggleTheme()"></i>
+                </div>
+            </div>
+            <div id="list"></div>
+            <div class="container mt-3">
+                <i class="bi bi-plus-circle-fill" onclick="addElement()"></i>    
+            </div>
+        </article>
+    </section>
+</body>
+</html>

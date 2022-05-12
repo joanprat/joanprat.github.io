@@ -1,0 +1,100 @@
+/* 
+? Colors
+Orange #FFD523
+Grey #B2B1B9
+Black #22272e
+Grey #2d333b
+*/
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+::placeholder{
+  color: #B2B1B97e;
+}
+body{
+    font-family: 'Gochi Hand', cursive !important;
+    background-color: #2d333b !important;
+}
+.list{
+    background-color: #22272e;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px #B2B1B97e;
+}
+.head{
+  border-bottom: 4px solid #FFD523;
+}
+h1{
+  color: #FFD523;
+}
+i{
+    font-size: 4em;
+    color: #FFD523;
+}
+i:hover{
+    cursor: pointer;
+}
+.theme i{
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 1.5rem !important;
+}
+/* Elementos de la lista */
+#list i{
+    font-size: 2em;
+    color: #FFD523;
+}
+#list i:hover{
+    cursor: pointer;
+}
+.drag:hover{
+  cursor: grab !important;  
+}
+#list input{
+    color: #B2B1B9;
+    background-color: #22272e;
+    font-size: 1.5em;
+    width: 100%;
+    border: none;
+}
+#list input:focus{
+  outline: none;
+  border-bottom: 2px solid #FFD523;
+}
+#list .item{
+  border-bottom: 2px solid #B2B1B918;
+}
+.d-none-element{
+  display: none !important;
+}
+/* Custom containers */
+.custom-container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .custom-container {
+    max-width: 570px;
+  }
+}
+@media (min-width: 768px) {
+  .custom-container {
+    max-width: 620px;
+  }
+}
+@media (min-width: 992px) {
+  .custom-container {
+    max-width: 620px;
+  }
+}
+@media (min-width: 1200px) {
+  .custom-container{
+    max-width: 620px;
+  }
+}
+@media (min-width: 1400px) {
+  .custom-container {
+    max-width: 620px;
+  }
+}

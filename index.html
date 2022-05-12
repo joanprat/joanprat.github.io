@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joan Prat Pérez</title>
+    <!-- Custom -->
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="./css/custom-styles.css">
+    <script src="./js/script.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light" id="my-nav">
+        <div class="container">
+            <div class="d-flex flex-row navbar-container justify-content-around">
+                <div class="d-flex flex-column mb-3 text-center">
+                    <p class="big m-0" href="#">Joan Prat Pérez</p>
+                    <p class="small m-0">&ltweb developer&gt</p>
+                </div>
+                <div class="navbar-toggle d-block d-md-none mt-2" id="navbar-toggle">
+                    <button onclick="toggleNavMobile()"><i class="bi bi-list"></i></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#career">Career</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#works">Projects</a>
+                        </li>
+                        <a href="#contact"><button type="button" class="btn custom-btn">Get in touch!</button></a> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile -->
+    <nav class="container-fluid navbar-mobile" id="navbar-mobile" style="display: none;">
+        <div class="d-flex flex-column">
+            <ul class="navbar-nav flex-column mx-4">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#career"><span>C</span>areer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#skills"><span>S</span>kills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#works2"><span>P</span>rojects</a>
+                </li>
+            </ul>
+            <a href="#contact"><button type="button" class="btn custom-btn">Get in touch!</button></a> 
+        </div>
+    </nav>
+    <section class="container-fluid">
+        <!-- Header -->
+        <article class="container header my-4">
+            <!-- Desktop -->
+            <div class="d-none d-lg-block" >
+                <div class="d-flex row">
+                    <div class="col-lg-6" data-aos="fade-up-right" data-aos-duration="1000">
+                        <img src="./img/header.png" alt="">
+                    </div>
+                    <div class="col-lg-6 align-self-center" data-aos="fade-up-left" data-aos-duration="1500">
+                        <p class="welcome">Welcome!</p>
+                        <p>My name is Joan and i'm a junior web <span>developer</span> currently <span>searching</span> for interesting and ambitious <span>projects</span> to expand my knowledge.</p>
+                        <a href="./JoanPrat_WebDeveloper_CV.pdf" download="JoanPrat_WebDeveloper_CV.pdf"><button type="button" class="btn custom-btn m-0">Download CV</button></a>
+                    </div>
+                </div>                
+            </div>
+            <!-- Mobile -->
+            <div class="container mx-2 d-block d-lg-none mobile" data-aos="fade-up-right" data-aos-duration="1000">
+                <p class="welcome mb-0">Welcome!</p>
+                <p>My name is Joan and i'm a junior web <span>developer</span> currently <span>searching</span> for interesting and ambitious <span>projects</span> to expand my knowledge.</p>
+                <a href="./JoanPrat_WebDeveloper_CV.pdf" download="JoanPrat_WebDeveloper_CV.pdf"><button type="button" class="btn custom-btn m-0">Download CV</button></a>
+                <img src="./img/header.png" data-aos="fade-up-left" data-aos-duration="1000">
+            </div>
+        </article>
+        <!-- Sidebar -->
+        <article >
+            <div class="d-flex flex-row">
+                <div class="d-flex flex-column text-center sticky-top d-none d-lg-block" id="sidebar" data-aos="fade-down" data-aos-duration="500">
+                    <div class="bd-highlight my-3">
+                        <p class="big m-0" href="#">Joan Prat Pérez</p>
+                        <p class="small m-0">&ltweb developer&gt</p>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-item">
+                                <hr><a class="nav-link" aria-current="page" href="#career">Career</a>
+                            </li>
+                            <li class="nav-item">
+                                <hr><a class="nav-link" aria-current="page" href="#skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <hr><a class="nav-link" aria-current="page" href="#works">Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex flex-row text-center justify-content-center bottom">
+                        <a href="https://es.linkedin.com/in/joan-prat-p%C3%A9rez-89a6271b1"><i class="bi bi-linkedin px-2"></i></a>
+                        <a href="#contact"><i class="bi bi-envelope-fill px-2"></i></a>
+                    </div>
+                </div>
+                <div class="d-flex flex-column" id="right">
+                    <!-- Carrer -->
+                    <article class="container-fluid" id="career" data-aos-anchor="#trigger-1">
+                        <div class="container">
+                            <div class="container line mx-4 py-5">
+                                <h1 class="my-5">Career</h1>
+                                <div class="d-flex flex-row item my-5">
+                                    <div class="img">
+                                        <img src="./img/study.png">    
+                                    </div>
+                                    <div class="mx-5 pt-2 px-3 box" data-aos="fade-right" id="trigger-1" data-aos-anchor="#trigger-2" data-aos-duration="1000">
+                                        <p class="main">WAD Degree</p>
+                                        <p class="date">September 2021</p>
+                                        <p>Web Apps Development. Frontend and backend development.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row item my-5">
+                                    <div class="img">
+                                        <img src="./img/work.png">    
+                                    </div>
+                                    <div class="mx-5 pt-2 px-3 box" data-aos="fade-right" id="trigger-2" data-aos-anchor="#trigger-3" data-aos-duration="1000">
+                                        <p class="main">Job as SysAdmin</p>
+                                        <p class="date">September 2021 - ICMAB</p>
+                                        <p>Experience managing VLAN Networks and SAMBA server as DC. User troubleshooting.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row item my-5">
+                                    <div class="img">
+                                        <img src="./img/study.png">    
+                                    </div>
+                                    <div class="mx-5 pt-2 px-3 box" data-aos="fade-right" id="trigger-3" data-aos-anchor="#trigger-4" data-aos-duration="1000">
+                                        <p class="main">SNA Degree</p>
+                                        <p class="date">July 2020</p>
+                                        <p>Got a system and network administration degree.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row item my-5">
+                                    <div class="img">
+                                        <img src="./img/work.png">    
+                                    </div>
+                                    <div class="mx-5 pt-2 px-3 box" data-aos="fade-right" id="trigger-4" data-aos-anchor="#trigger-5" data-aos-duration="1000">
+                                        <p class="main">Job as SysAdmin</p>
+                                        <p class="date">July 2019 - E2M</p>
+                                        <p>Experience managing network devices and windows based servers.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row item my-5">
+                                    <div class="img">
+                                        <img src="./img/work.png">    
+                                    </div>
+                                    <div class="mx-5 pt-2 px-3 box" data-aos="fade-right" id="trigger-5" data-aos-anchor="#trigger-6" data-aos-duration="1000"> 
+                                        <p class="main">Job as IT technician</p>
+                                        <p class="date">July 2018 - Davantis</p>
+                                        <p>Experience in building PC and advanced OS configuration.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row item my-5">
+                                    <div class="img">
+                                        <img src="./img/study.png">    
+                                    </div>
+                                    <div class="mx-5 pt-2 px-3 box" data-aos="fade-right" id="trigger-6" data-aos-duration="1000">
+                                        <p class="main">MSN Degree</p>
+                                        <p class="date">July 2018</p>
+                                        <p>Got a microsystems and networking degree.</p>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </article>
+                    <!-- Skills -->
+                    <!-- Desktop -->
+                    <article class="container my-5" id="skills">
+                        <h1 class="my-4">Skills</h1>
+                        <div class="d-flex flex-row">
+                            <div class="col-6 d-none d-lg-block" data-aos="fade-up-right" data-aos-duration="1000">
+                                <img src="./img/skills.png" class="my-5 mx-2">
+                            </div>
+                            <div class="col-sm-12 col-lg-6 p-5 mt-3" data-aos="fade-up-left" data-aos-duration="1000">
+                                <div class="custom-container py-5 px-2 text-center img-skills" id="skills-container">
+                                    <p>As a developer</p>
+                                    <div class="d-flex flex-row">
+                                        <img src="./img/tech/html5.png" alt="">
+                                        <img src="./img/tech/css3.png" alt="">
+                                        <img src="./img/tech/javascript.png" alt="">
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <img src="./img/tech/bootstrap.png" alt="">
+                                        <img src="./img/tech/php.png" alt="">
+                                        <img src="./img/tech/java.png" alt="">
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <img src="./img/tech/cplusplus.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <div class="d-flex flex-row justify-content-center toggle-skills">
+                                <p class="align-self-center m-0">Developer</p>
+                                <div class="align-slef-center mx-4">
+                                    <div class="long" onclick="toggleSkills(2)" id="toggle-skills">
+                                        <div class="circle" id="selector">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="align-self-center m-0">SysAdmin</p>                                
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Works -->
+                    <div class="wave">
+                        <img src="./img/wave-myworks.png">
+                    </div>
+                    <article class="container-fluid d-none d-lg-block pb-5" id="works">
+                        <h1 class="mb-4">MyWorks</h1>
+                        <div class="d-flex flex-row text-center">
+                            <div class="col-6 img-container" data-aos="fade-up-right" data-aos-duration="1000">
+                                <a href="https://github.com/joanprat/joanprat.github.io"><img src="./img/project1.png"></a>
+                            </div>
+                            <div class="col-6 img-container" data-aos="fade-up-left" data-aos-duration="1000">
+                                <a href="./projects/project2/index.html"><img src="./img/project2.png"></a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <div class="col-6 img-container" data-aos="fade-up-right" data-aos-duration="1000">
+                                <img src="./img/comingsoon-3.png">
+                            </div>
+                            <div class="col-6 img-container" data-aos="fade-up-left" data-aos-duration="1000">
+                                <img src="./img/comingsoon-4.png">
+                            </div>
+                        </div>
+                    </article>
+                    <article class="container-fluid d-block d-lg-none pb-5" id="works2">
+                        <h1 class="mb-4">MyWorks</h1>
+                        <div class="d-flex flex-column text-center">
+                            <div class="col-12 img-container" data-aos="fade-up-right" data-aos-duration="1000">
+                                <a href="https://github.com/joanprat/joanprat.github.io"><img src="./img/project1.png"></a>
+                            </div>
+                            <div class="col-12 img-container" data-aos="fade-up-left" data-aos-duration="1000">
+                                <a href="./projects/project2/index.html"><img src="./img/project2.png"></a>
+                            </div>
+                            <div class="col-12 img-container" data-aos="fade-up-right" data-aos-duration="1000">
+                                <img src="./img/comingsoon-3.png">
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </article>
+        <!-- Contact -->
+        <article id="contact">
+            <div class="container text-center py-5">
+                <h1>Do you like what you see?</h1>
+                <p>Don't hesitate to get in touch with me!</p>
+                <div class="row my-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+                    <div class="col-md-12 col-lg-6 d-none d-lg-block">
+                        <img src="./img/form.png" alt="">
+                    </div>
+                    <div class="col-md-12 col-lg-6">
+                        <form>
+                            <div class="row g-3 align-items-center my-2">
+                                <div class="col-6">
+                                    <label for="email" class="col-form-label visually-hidden">email</label>
+                                    <input type="email" id="email" class="form-control" placeholder="Your e-mail">
+                                </div>
+                                <div class="col-6">
+                                    <label for="topic" class="col-form-label visually-hidden">topic</label>
+                                    <input type="text" id="topic" class="form-control" placeholder="Topic we're going to discuss">
+                                </div>
+                            </div>
+                            <div class="my-2">
+                                <textarea rows="10" class="form-control" placeholder="What can I do for you?" ></textarea>
+                            </div>
+                            <div class="my-2 text-start">
+                                <button type="submit" class="btn btn-custom px-4">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </article>        
+    </section>
+    <footer class="py-2">
+        <p>Joan Prat Pérez - Web Portfolio - Copyright © 2022</p>
+    </footer>
+</body>
+</html>

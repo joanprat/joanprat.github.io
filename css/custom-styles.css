@@ -338,6 +338,7 @@ p{
     overflow: hidden;
 }
 #works img{
+    cursor: pointer;
     width: 100%;
 }
 #works h1{
@@ -439,3 +440,37 @@ footer p{
     font-weight: 400;
     color: #343a407e;
 }
+
+/* Modal */
+.modal-header img {
+    filter: opacity(40%);
+    transition: all 0.5s;
+}
+.modal-header img:hover{
+    filter: opacity(100%);
+}
+.modal-body > .title {
+    font-size: 1.5em;
+    color: #FFC107;
+    font-weight: 600;
+}
+.modal-body a {
+    text-decoration: none;
+    color: #343A40;
+    font-weight: 600;
+}
+.modal-body a:hover {
+    color: #FFC107;
+}
+.modal-footer a{
+    font-size: 3em;
+    color: #343A40;
+}
+.modal-footer .small{
+    font-size: 1.5em;
+    color: #343A40;
+}
+.modal-footer a:hover{
+    color: #FFC107;
+}
+

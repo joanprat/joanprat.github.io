@@ -25,18 +25,19 @@ function toggleSkills(toggleOption){
         container.innerHTML = `
         <p>As a developer</p>
         <div class="d-flex flex-row">
-            <img src="./img/tech/html5.png">
-            <img src="./img/tech/css3.png">
-            <img src="./img/tech/javascript.png">
+            <img src="./img/tech/html5.png" alt="HTML5 Skill">
+            <img src="./img/tech/css3.png" alt="CSS3 Skill">
+            <img src="./img/tech/javascript.png" alt="JS Skill">
         </div>
         <div class="d-flex flex-row">
-            <img src="./img/tech/bootstrap.png">
-            <img src="./img/tech/php.png">
-            <img src="./img/tech/java.png">
+            <img src="./img/tech/bootstrap.png" alt="Bootstrap 5 Skill">
+            <img src="./img/tech/php.png" alt="Php Skill">
+            <img src="./img/tech/java.png" alt="Java Skill">
         </div>
         <div class="d-flex flex-row">
-            <img src="./img/tech/cplusplus.png">
-        </div>
+            <img src="./img/tech/cplusplus.png" alt="C++ Skill">
+            <img src="./img/tech/code-igniter.png" alt="CI Skill">
+            <img src="./img/tech/react.png" alt="React Skill">
         </div>
         `;
     }

@@ -405,6 +405,15 @@ footer p{
 #contact p{
     color: #343A40;
 }
+#contact a {
+    text-decoration: none;
+    color: #343A40;
+    transition: 0.5s;
+}
+#contact a:hover {
+    text-decoration: none;
+    color: #FFC107;
+}
 #contact{
     background-color: #F9F9F9;
 }
@@ -422,11 +431,24 @@ footer p{
     border-radius: 0px;
 }
 #contact button{
+    font-size: 1.2em;
     color: #FFFFFF;
     border-bottom: 2px solid #FFC107 !important;
     background-color: #FFC107;
     border-color: #FFC107;
+    border-radius: 0.25rem;
+}
+#contact i {
+    font-size: 1.5em;
+    color: #FFFFFF;
+}
+#contact .contact-item {
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #FFC107 !important;
     border-radius: 0px;
+}
+#contact .contact-item > .col-2 {
+    background-color: #FFC107;
 }
 /* Header Mobile */
 .header .mobile .welcome{
